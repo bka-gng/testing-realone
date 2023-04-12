@@ -1,0 +1,16 @@
+def main():
+    numbread = int(input("How much bread would you like? "))
+    print(youwhat(numbread))
+
+def youwhat(amount):
+    print(f"ok, so you want {amount} breads? sure, but it'll cost you...")
+    cost = int(input("How much are you paying me? "))
+    if cost >= 10:
+        print("damn! i'll grab you some bread then")
+    elif 5 <= cost < 10:
+        print("sure, i'll get some for you...")
+    else:
+        print("lol get it yourself")
+
+
+main()
